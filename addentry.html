@@ -17,7 +17,7 @@ permalink: /addentry
           <form action="#">
             <div class="file-field input-field">
               <div class="btn">
-                <span>File</span>
+                <span>Excel File</span>
                 <input type="file">
               </div>
               <div class="file-path-wrapper">
@@ -59,7 +59,6 @@ permalink: /addentry
           <div class="row">
             <form class="col s12">
 
-
               <div class="row">
                 <div class="input-field col s4">
                   <input id="first_name" type="text" class="validate">
@@ -76,17 +75,91 @@ permalink: /addentry
               </div>
 
               <div class="row">
-
-                <p>
-                  <input name="group1" type="radio" id="test1" />
-                  <label for="test1">Red</label>
-                </p>
-                <p>
-                  <input name="group1" type="radio" id="test2" />
-                  <label for="test2">Yellow</label>
-                </p>
-
+                <div class="input-field col s3">
+                  <select>
+                    <option value="female" selected>Female</option>
+                    <option value="male">Male</option>
+                  </select>
+                  <label>Gender</label>
+                </div>
+                <div class="input-field col s3">
+                  <input id="birth_year" type="text" class="validate">
+                  <label for="birth_year">Birth Year</label>
+                </div>
+                <div class="input-field col s3">
+                  <input id="death_year" type="text" class="validate">
+                  <label for="death_year">Death Year</label>
+                </div>
+                <div class="input-field col s3">
+                  <input id="religion" type="text" class="validate">
+                  <label for="religion">Religion</label>
+                </div>
               </div>
+
+              <div class="row">
+                <div class="input-field col s4">
+                  <input id="first_degree_source" type="text" class="validate">
+                  <label for="first_degree_source">First Degree Source</label>
+                </div>
+                <div class="input-field col s4">
+                  <input id="first_degree_type" type="text" class="validate">
+                  <label for="first_degree_type">First Degree Type</label>
+                </div>
+                <div class="input-field col s4">
+                  <input id="first_degree_year" type="text" class="validate">
+                  <label for="first_degree_year">First Degree Year</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s4">
+                  <input id="highest_degree_source" type="text" class="validate">
+                  <label for="highest_degree_source">Highest Degree Source</label>
+                </div>
+                <div class="input-field col s4">
+                  <input id="highest_degree_type" type="text" class="validate">
+                  <label for="highest_degree_type">Highest Degree Type</label>
+                </div>
+                <div class="input-field col s4">
+                  <input id="highest_degree_year" type="text" class="validate">
+                  <label for="highest_degree_year">Highest Degree Year</label>
+                </div>
+              </div>
+
+              <!--<div class="row">
+                <div class="input-field col s3">
+                  <select>
+                    <option value="female" selected>No</option>
+                    <option value="male">Yes</option>
+                  </select>
+                  <label>Married</label>
+                </div>
+              </div>-->
+              <div class="row">
+    						<input type="checkbox" id="requirement" class="control">
+    						<label for="requirement">Married?</label>
+    						<fieldset class="conditional">
+                  <div class="row">
+                    <div class="input-field col s3">
+                      <input id="spouse_name" type="text" class="validate">
+                      <label for="spouse_name">Spouse Name</label>
+                    </div>
+                    <div class="input-field col s3">
+                      <input id="spouse_first_degree_source" type="text" class="validate">
+                      <label for="spouse_first_degree_source">Spouse First Degree Source</label>
+                    </div>
+                    <div class="input-field col s3">
+                      <input id="spouse_highest_degree_source" type="text" class="validate">
+                      <label for="spouse_highest_degree_source">Spouse Highest Degree Source</label>
+                    </div>
+                    <div class="input-field col s3">
+                      <input id="spouse_occupation" type="text" class="validate">
+                      <label for="spouse_occupation">Spouse Occupation</label>
+                    </div>
+                  </div>
+    						</fieldset>
+              </div>
+
 
 
               <div class="row">
