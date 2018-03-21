@@ -217,142 +217,32 @@
       </div>
     </div>
 
-    <div class="ui text container">
-      <h1 class="ui inverted header">
-        BARNARD HISTORY
-      </h1>
-      <h2>INTERACTIVE INSTITUTIONAL HISTORY OF BARNARD COLLEGE IN NEW YORK CITY</h2>
-    </div>
+
+    <div class="ui container" style="padding-top: 5em; padding-bottom: 5em;">
+
+      <iframe onmousewheel="" frameborder="0" style="border-width:0;" id="tl-timeline-iframe" width="100%" height="700em" src="https://www.tiki-toki.com/timeline/embed/267429/9247327124/"></iframe>
+      <script type="text/javascript">
+      if (window.postMessage) {
+      var tlMouseupFunc = function() {
+      var tlFrame = document.getElementById("tl-timeline-iframe");
+      if (tlFrame.contentWindow && tlFrame.contentWindow.postMessage) {
+      tlFrame.contentWindow.postMessage("mouseup","*");
+      }
+      }
+      if (typeof window.addEventListener != "undefined") {
+      window.addEventListener("mouseup", tlMouseupFunc, false);
+      }
+      else if (typeof window.attachEvent != "undefined") {
+      window.attachEvent("onmouseup", tlMouseupFunc);
+      }
+      }
+      </script>
+
+      </div>
+
+
   </div>
 
-
-<div class="ui container" style="padding-top: 5em; padding-bottom: 5em;">
-
-    <div class="ui three stackable cards">
-
-      <a class="ui card" href="/search/">
-        <div class="image">
-          <img src="/assets/images/1.jpg">
-        </div>
-        <div class="content">
-          <div class="header">Search Database</div>
-          <div class="meta">
-            <span class="category"></span>
-          </div>
-          <div class="description">
-            <p>Search the Barnard History database of people, places, documents, and images.</p>
-          </div>
-        </div>
-        <div class="extra content">
-          <span class="right floated">
-            3,290 Entries
-          </span>
-        </div>
-      </a>
-
-      <a class="ui card" href="https://archive.org/stream/birdbookillustra00reedrich#page/144/mode/2up">
-        <div class="image">
-          <img src="/assets/images/2.jpg">
-        </div>
-        <div class="content">
-          <div class="header">Narrative</div>
-          <div class="meta">
-            <span class="category"></span>
-          </div>
-          <div class="description">
-            <p>Read Professor McCaughey's Narrative of Barnard History. Read chronologically, or jump to a specific place with search.</p>
-          </div>
-        </div>
-        <div class="extra content">
-          <span class="right floated">
-              Full Book
-          </span>
-        </div>
-      </a>
-
-      <a class="ui card" href="/visualization">
-        <div class="image">
-          <img src="/assets/images/3.jpg">
-        </div>
-        <div class="content">
-          <div class="header">Visualization</div>
-          <div class="meta">
-            <span class="category"></span>
-          </div>
-          <div class="description">
-            <p>Visualization of Barnard History.</p>
-          </div>
-        </div>
-        <div class="extra content">
-          <span class="right floated">
-            Learn More
-          </span>
-        </div>
-      </a>
-
-      <a class="ui card" href="https://nikjain7.carto.com/builder/7c751099-8fd6-49c0-9708-44d8de58808d/embed">
-        <div class="image">
-          <img src="/assets/images/3.jpg">
-        </div>
-        <div class="content">
-          <div class="header">Map</div>
-          <div class="meta">
-            <span class="category"></span>
-          </div>
-          <div class="description">
-            <p>Enjoy interactive maps visually showing Barnard's geographic history.</p>
-          </div>
-        </div>
-        <div class="extra content">
-          <span class="right floated">
-            Interactive Maps
-          </span>
-        </div>
-      </a>
-
-      <a class="ui card" href="/timeline">
-        <div class="image">
-          <img src="/assets/images/4.jpg">
-        </div>
-        <div class="content">
-          <div class="header">Timeline</div>
-          <div class="meta">
-            <span class="category"></span>
-          </div>
-          <div class="description">
-            <p>Explore a timeline of significant dates in Barnard History.</p>
-          </div>
-        </div>
-        <div class="extra content">
-          <span class="right floated">
-            528 Entries
-          </span>
-        </div>
-      </a>
-
-      <a class="ui card" href="#">
-        <div class="image">
-          <img src="/assets/images/5.jpg">
-        </div>
-        <div class="content">
-          <div class="header">About</div>
-          <div class="meta">
-            <span class="category"></span>
-          </div>
-          <div class="description">
-            <p>Learn more about the creation and upkeep of Barnard History. Question or concern? Reach out here.</p>
-          </div>
-        </div>
-        <div class="extra content">
-          <span class="right floated">
-            Learn More
-          </span>
-        </div>
-      </a>
-
-    </div>
-
-  </div>
 
   <div class="ui inverted vertical footer segment">
     <div class="ui container">

@@ -29,31 +29,6 @@
   <script src="assets/library/jquery.min.js"></script>
   <script src="../dist/components/form.js"></script>
   <script src="../dist/components/transition.js"></script>
-  <script>
-  $(document)
-    .ready(function() {
-
-      // fix menu when passed
-      $('.masthead')
-        .visibility({
-          once: false,
-          onBottomPassed: function() {
-            $('.fixed.menu').transition('fade in');
-          },
-          onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
-          }
-        })
-      ;
-
-      // create sidebar and attach to menu open
-      $('.ui.sidebar')
-        .sidebar('attach events', '.toc.item')
-      ;
-
-    })
-  ;
-</script>
 
   <style type="text/css">
     body {
@@ -72,14 +47,13 @@
 </head>
 <body>
 
-  <div class="ui large top fixed hidden menu">
+  <div class="ui large top fixed menu">
     <div class="ui container">
-      <a class="active item" href="/">Home</a>
+      <a class="item" href="/">Home</a>
       <a class="item" href="/search">Search Database</a>
       <a class="item" href="https://archive.org/stream/birdbookillustra00reedrich#page/144/mode/2up">Narrative</a>
-      <a class="item" href="/visualization">Visualization</a>
       <a class="item" href="https://nikjain7.carto.com/builder/7c751099-8fd6-49c0-9708-44d8de58808d/embed">Map</a>
-      <a class="item" href="/timeline">Timeline</a>
+      <a class="active item" href="/timeline">Timeline</a>
       <a class="item">About</a>
       <div class="right menu">
         <div class="item">
@@ -92,18 +66,6 @@
     </div>
   </div>
 
-  <!-- Sidebar Menu -->
-  <div class="ui vertical inverted sidebar menu">
-    <a class="active item" href="/">Home</a>
-    <a class="item" href="/search">Search Database</a>
-    <a class="item" href="https://archive.org/stream/birdbookillustra00reedrich#page/144/mode/2up">Narrative</a>
-    <a class="item" href="/visualization">Visualization</a>
-    <a class="item" href="https://nikjain7.carto.com/builder/7c751099-8fd6-49c0-9708-44d8de58808d/embed">Map</a>
-    <a class="item" href="/timeline">Timeline</a>
-    <a class="item">About</a>
-    <a class="item" href="/login">Log In</a>
-    <a class="item" href="/addentry">Add Entry</a>
-  </div>
 
 
 <div class="ui middle aligned center aligned grid">
@@ -117,23 +79,7 @@
     <section class="ui container" style="padding-top: 5em;">
 
 
-          <iframe onmousewheel="" frameborder="0" style="border-width:0;" id="tl-timeline-iframe" width="1200" height="700" src="https://www.tiki-toki.com/timeline/embed/267429/9247327124/"></iframe>
-          <script type="text/javascript">
-          if (window.postMessage) {
-          var tlMouseupFunc = function() {
-          var tlFrame = document.getElementById("tl-timeline-iframe");
-          if (tlFrame.contentWindow && tlFrame.contentWindow.postMessage) {
-          tlFrame.contentWindow.postMessage("mouseup","*");
-          }
-          }
-          if (typeof window.addEventListener != "undefined") {
-          window.addEventListener("mouseup", tlMouseupFunc, false);
-          }
-          else if (typeof window.attachEvent != "undefined") {
-          window.attachEvent("onmouseup", tlMouseupFunc);
-          }
-          }
-          </script>
+          <p>This is all Pedal, really excited to see what they come up with.</p>
 
 
 </div>
