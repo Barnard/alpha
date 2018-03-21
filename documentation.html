@@ -1,0 +1,167 @@
+---
+title: BH - Documentation
+layout: standard
+permalink: /documentation
+---
+
+<div class="container" style="padding-top: 3em; padding-bottom: 10em;">
+
+    <div class="row">
+      <div class="col s12 m12">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Documentation</span>
+            <p>The goal of the documentation is to aid contribution to Barnard History.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3>How to Contribute</h3>
+
+    <p>Ask for a user account, format excel correctly, etc. Build as we go</p>
+
+    <h3>Proper Excel Formatting</h3>
+
+    <p>Please make sure the first row the excel sheet is properly formatted.<p>
+
+    <p>Find blank examples below here.<p>
+
+  
+  <table>
+      <thead>
+        <tr>
+            <th>Entry Type</th>
+            <th>File</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>People</td>
+          <td>File Link</td>
+        </tr>
+        <tr>
+          <td>Places</td>
+          <td>File Link</td>
+        </tr>
+        <tr>
+          <td>Events</td>
+          <td>File Link</td>
+        </tr>
+        <tr>
+          <td>Documentation</td>
+          <td>File Link</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>If modifying your existing table, use the following categories.</p>
+    <p>
+    People
+    	id | unique identifier for each person in database
+
+    	first_name | First Name
+    	maiden_name | Maiden Name
+    	last_name | Last Name
+    	gender | Gender
+    	birth_year | Birth Year
+    	death_year | Death Year
+    	birthplace | Birthplace
+    	religion | Religion
+    	first_degree_source | First Degree Source
+    	first_degree_type | First Degree Source Type
+    	first_degree_year | First Degree Source Year
+    	highest_degree_source | Highest Degree Source
+    	highest_degree_type | Highest Degree Source Type
+    	highest_degree_year | Highest Degree Source Year
+    	spouse_name | Spouse Name
+    	spouse_first_degree_source | Spouse First Degree Source
+    	spouse_highest_degree_source | Spouse Highest Degree Source
+    	spouse_occupation | Spouse Occupation
+    	marital_status | Marital Status (1 is married?)
+    	residence | Residence
+    	neighborhood | Neighborhood
+    	occupation | Occupation
+    	description | Description
+
+    	year_joined | Year Joined Board
+    	board_status | Board Status
+    	board_office | Board Office
+    	year_left_board | Year Left Board
+    	reason_left_board | Reason Left Board
+
+    	faculty_departments | Department(s) they worked in as faculty
+    	year_start_teaching | Year they started teaching at Barnard
+    	year_joined_faculty | Year they became faculty member
+    	year_left_teaching | Year they stopped teaching at Barnard
+    	reason_left_teaching | Reason for leaving teaching position
+
+    	residence_before_barnard_student | Residence before enrolling at Barnard
+    	residence_after_barnard_student | Residence after leaving Barnard
+    	year_graduated_barnard | Graduating Class Year at Barnard
+    	did_attend_public_school | Attended Public School (True for public, False for private)
+    	major_at_barnard | Major
+    	additional_education | Additional Education
+
+    	admin_title  | Administrative Title
+    	pre_admin_residence | Residence immediately prior to becoming an administrator
+    	pre_admin_job | Job immediately prior to becoming an administrator
+    	year_admin_duties_start | Year that administrating duties started
+    	year_admin_duties_end | Year that administrating duties ended
+    	reason_left_admin | Reason for leaving administration
+    	post_admin_job | Job after leaving administration
+    	post_admin_residence | Residence after leaving administration
+
+    	is_trustee | Trustees
+    	is_faculty | Faculty
+    	is_student | Students
+    	is_admin | Senior Administrators
+
+    	place_connections | places connected to person
+    	event_connections | events connected to person
+    	document_connections | documents connected to person
+
+    Places
+    	id | identifier for each place in database
+    	name | Place Name
+    	year | Year when relevance to Barnard began
+    	location | Location
+    	address | Address
+    	lat | Latitude
+    	lon | Longitude
+    	description | Description
+
+    	person_connections | people connected to place
+    	event_connections | events connected to place
+    	document_connections | documents connected to place
+
+    Events
+    	id |  identifier for each event in database
+    	name | Event name
+    	year | Year of event
+    	month | Month
+    	day | Day
+    	event_type | Event Type
+    	description | description
+
+    	place_connections | places connected to event
+    	person_connections | people connected to event
+    	document_connections | documents connected to event
+
+    Documents
+    	id |  identifier for each document in database
+    	name | Document Name
+    	author | Author
+    	description | Description
+    	year | Year
+    	month | Month
+    	day | Day
+
+    	place_connections | places connected to document
+    	event_connections | events connected to document
+    	person_connections | people connected to document
+
+    </p>
+
+</div>

@@ -1,0 +1,162 @@
+---
+title: BH - Add Entry
+layout: standard
+permalink: /addentry
+---
+
+<div class="container" style="padding-top: 3em; padding-bottom: 10em;">
+
+  <div class="row">
+    <div class="col s12 m12">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Add Entry</span>
+          <p>Select the category and subcategory of the entry you are creating. Leave unknown fields blank.</p>
+          <br>
+          <p>For bulk database upload from an Excel file, please upload the file below. Please read the <a href="/documentation">documentation</a> and format the excel file correctly.</p>
+          <form action="#">
+            <div class="file-field input-field">
+              <div class="btn">
+                <span>File</span>
+                <input type="file">
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col s12">
+        <ul class="tabs">
+          <li class="tab col s3"><a href="#people">People</a></li>
+          <li class="tab col s3"><a href="#places">Places</a></li>
+          <li class="tab col s3"><a href="#events">Events</a></li>
+          <li class="tab col s3"><a href="#documents">Documents</a></li>
+        </ul>
+      </div>
+      <div id="people" class="col s12">
+
+        <br>
+
+        <ul id="tabs-swipe-demo" class="tabs">
+          <li class="tab col s3"><a href="#trustee">Trustee</a></li>
+          <li class="tab col s3"><a href="#faculty">Faculty</a></li>
+          <li class="tab col s3"><a href="#student">Student</a></li>
+          <li class="tab col s3"><a href="#administrator">Administrator</a></li>
+        </ul>
+
+        <div id="trustee" class="col s12">
+
+          <br>
+          <br>
+
+          <div class="row">
+            <form class="col s12">
+
+
+              <div class="row">
+                <div class="input-field col s4">
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s4">
+                  <input id="maiden_name" type="text" class="validate">
+                  <label for="maiden_name">Maiden Name</label>
+                </div>
+                <div class="input-field col s4">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+
+              <div class="row">
+
+                <p>
+                  <input name="group1" type="radio" id="test1" />
+                  <label for="test1">Red</label>
+                </p>
+                <p>
+                  <input name="group1" type="radio" id="test2" />
+                  <label for="test2">Yellow</label>
+                </p>
+
+              </div>
+
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="description" class="materialize-textarea"></textarea>
+                  <label for="description">Description</label>
+                </div>
+              </div>
+
+
+
+
+              <div class="row">
+              </div>
+              <div class="row">
+              </div>
+              <div class="row">
+              </div>
+              <div class="row">
+              </div>
+              <div class="row">
+              </div>
+              <div class="row">
+              </div>
+              <div class="row">
+              </div>
+              <div class="row">
+              </div>
+              <div class="row">
+              </div>
+
+
+
+            </form>
+          </div>
+
+
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+          </button>
+
+        </div>
+        <div id="faculty" class="col s12">
+
+        </div>
+        <div id="student" class="col s12">
+
+
+        </div>
+        <div id="administrator" class="col s12">
+
+
+        </div>
+
+
+      </div>
+      <div id="places" class="col s12">
+
+
+      </div>
+      <div id="events" class="col s12">
+
+
+
+      </div>
+      <div id="documents" class="col s12">
+
+
+
+
+      </div>
+    </div>
+</div>
