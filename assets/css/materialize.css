@@ -2817,7 +2817,7 @@ ul.staggered-list li {
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .hide-on-med-and-down {
     display: none !important;
   }
@@ -4246,7 +4246,7 @@ nav .nav-wrapper {
   height: 100%;
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 1199px) {
   nav a.button-collapse {
     display: none;
   }
