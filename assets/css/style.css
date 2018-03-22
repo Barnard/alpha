@@ -37,3 +37,23 @@
 				position: absolute;
 				width: 1px;
 			}
+
+.tabs .indicator {
+
+  background-color: #708090;
+
+}
+
+.tabs .tab a.active {
+  color:  #708090;
+  background-color: #F5F5F5;
+}
+
+.tabs .tab a:hover {
+  color: #708090;
+  background-color: #F5F5F5;
+}
+
+.tabs .tab a {
+  color: black;
+}

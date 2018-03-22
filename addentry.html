@@ -4,20 +4,20 @@ layout: standard
 permalink: /addentry
 ---
 
-<div class="container" style="padding-top: 3em; padding-bottom: 10em;">
+<div class="container" style="padding-top: 3em; padding-bottom: 3em;">
 
   <div class="row">
     <div class="col s12 m12">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
           <span class="card-title">Add Entry</span>
-          <p>Select the category and subcategory of the entry you are creating. Leave unknown fields blank.</p>
+          <p>Select the category of the entry you are creating. Leave unknown fields blank.</p>
           <br>
           <p>For bulk database upload from an Excel file, please upload the file below. Please read the <a href="/documentation">documentation</a> and format the excel file correctly.</p>
           <form action="#">
             <div class="file-field input-field">
               <div class="btn">
-                <span>Excel File</span>
+                <span>Upload Excel File</span>
                 <input type="file">
               </div>
               <div class="file-path-wrapper">
@@ -25,7 +25,6 @@ permalink: /addentry
               </div>
             </div>
           </form>
-
         </div>
       </div>
     </div>
@@ -41,17 +40,6 @@ permalink: /addentry
         </ul>
       </div>
       <div id="people" class="col s12">
-
-        <br>
-
-        <ul id="tabs-swipe-demo" class="tabs">
-          <li class="tab col s3"><a href="#trustee">Trustee</a></li>
-          <li class="tab col s3"><a href="#faculty">Faculty</a></li>
-          <li class="tab col s3"><a href="#student">Student</a></li>
-          <li class="tab col s3"><a href="#administrator">Administrator</a></li>
-        </ul>
-
-        <div id="trustee" class="col s12">
 
           <br>
           <br>
@@ -80,7 +68,7 @@ permalink: /addentry
                     <option value="female" selected>Female</option>
                     <option value="male">Male</option>
                   </select>
-                  <label>Gender</label>
+                  <label>Sex</label>
                 </div>
                 <div class="input-field col s3">
                   <input id="birth_year" type="text" class="validate">
@@ -126,18 +114,9 @@ permalink: /addentry
                 </div>
               </div>
 
-              <!--<div class="row">
-                <div class="input-field col s3">
-                  <select>
-                    <option value="female" selected>No</option>
-                    <option value="male">Yes</option>
-                  </select>
-                  <label>Married</label>
-                </div>
-              </div>-->
               <div class="row">
-    						<input type="checkbox" id="requirement" class="control">
-    						<label for="requirement">Married?</label>
+    						<input type="checkbox" id="married" class="control">
+    						<label for="married">Married?</label>
     						<fieldset class="conditional">
                   <div class="row">
                     <div class="input-field col s3">
@@ -160,7 +139,176 @@ permalink: /addentry
     						</fieldset>
               </div>
 
+              <div class="row">
+                <div class="input-field col s4">
+                  <input id="residence" type="text" class="validate">
+                  <label for="residence">Residence</label>
+                </div>
+                <div class="input-field col s4">
+                  <input id="neighborhood" type="text" class="validate">
+                  <label for="neighborhood">Neighborhood</label>
+                </div>
+                <div class="input-field col s4">
+                  <input id="occupation" type="text" class="validate">
+                  <label for="occupation">Occupation</label>
+                </div>
+              </div>
 
+              <div class="row">
+    						<input type="checkbox" id="trustee" class="control">
+    						<label for="trustee">Trustee?</label>
+    						<fieldset class="conditional">
+
+                  <div class="row">
+                    <div class="input-field col s4">
+                      <input id="year_joined" type="text" class="validate">
+                      <label for="year_joined">Year Joined</label>
+                    </div>
+                    <div class="input-field col s4">
+                      <input id="board_status" type="text" class="validate">
+                      <label for="board_status">Board Status</label>
+                    </div>
+                    <div class="input-field col s4">
+                      <input id="board_office" type="text" class="validate">
+                      <label for="board_office">Board Office</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s4">
+                      <input id="year_left_board" type="text" class="validate">
+                      <label for="year_left_board">Year Left Board</label>
+                    </div>
+                    <div class="input-field col s8">
+                      <input id="reason_left_board" type="text" class="validate">
+                      <label for="reason_left_board">Reason Left Board</label>
+                    </div>
+                  </div>
+
+
+
+    						</fieldset>
+              </div>
+
+              <div class="row">
+    						<input type="checkbox" id="faculty" class="control">
+    						<label for="faculty">Faculty?</label>
+    						<fieldset class="conditional">
+
+                  <div class="row">
+                    <div class="input-field col s4">
+                      <input id="faculty_departments" type="text" class="validate">
+                      <label for="faculty_departments">Faculty Department(s)</label>
+                    </div>
+                    <div class="input-field col s4">
+                      <input id="year_start_teaching" type="text" class="validate">
+                      <label for="year_start_teaching">Year Start Teaching</label>
+                    </div>
+                    <div class="input-field col s4">
+                      <input id="year_left_teaching" type="text" class="validate">
+                      <label for="year_left_teaching">Year Left Teaching</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s4">
+                      <input id="year_joined_faculty" type="text" class="validate">
+                      <label for="year_joined_faculty">Year Joined Faculty</label>
+                    </div>
+                    <div class="input-field col s8">
+                      <input id="reason_left_teaching" type="text" class="validate">
+                      <label for="reason_left_teaching">Reason Left Teaching</label>
+                    </div>
+                  </div>
+
+
+
+    						</fieldset>
+              </div>
+
+              <div class="row">
+    						<input type="checkbox" id="student" class="control">
+    						<label for="student">Student?</label>
+    						<fieldset class="conditional">
+
+                  <div class="row">
+                    <div class="input-field col s4">
+                      <input id="residence_before_barnard_student" type="text" class="validate">
+                      <label for="residence_before_barnard_student">Residence Before Barnard Student</label>
+                    </div>
+                    <div class="input-field col s4">
+                      <input id="residence_after_barnard_student" type="text" class="validate">
+                      <label for="residence_after_barnard_student">Residence After Barnard Student</label>
+                    </div>
+                    <div class="input-field col s4">
+                      <input id="year_graduated_barnard" type="text" class="validate">
+                      <label for="year_graduated_barnard">Year Graduated Barnard</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s4">
+                      <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                      </select>
+                      <label>Public School?</label>
+                    </div>
+                    <div class="input-field col s4">
+                      <input id="major_at_barnard" type="text" class="validate">
+                      <label for="major_at_barnard">Major at Barnard</label>
+                    </div>
+                    <div class="input-field col s4">
+                      <input id="additional_education" type="text" class="validate">
+                      <label for="additional_education">Additional Education</label>
+                    </div>
+                  </div>
+
+
+
+    						</fieldset>
+              </div>
+
+              <div class="row">
+    						<input type="checkbox" id="administrator" class="control">
+    						<label for="administrator">Administrator?</label>
+    						<fieldset class="conditional">
+                  <div class="row">
+                    <div class="input-field col s3">
+                      <input id="admin_title" type="text" class="validate">
+                      <label for="admin_title">Administrative Title</label>
+                    </div>
+                    <div class="input-field col s3">
+                      <input id="pre_admin_residence" type="text" class="validate">
+                      <label for="pre_admin_residence">Previous Residence</label>
+                    </div>
+                    <div class="input-field col s3">
+                      <input id="pre_admin_job" type="text" class="validate">
+                      <label for="pre_admin_job">Previous Job</label>
+                    </div>
+                    <div class="input-field col s3">
+                      <input id="year_admin_duties_start" type="text" class="validate">
+                      <label for="year_admin_duties_start">Start Year</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s3">
+                      <input id="year_admin_duties_end" type="text" class="validate">
+                      <label for="year_admin_duties_end">End Year</label>
+                    </div>
+                    <div class="input-field col s3">
+                      <input id="reason_left_admin" type="text" class="validate">
+                      <label for="reason_left_admin">Departure Reason</label>
+                    </div>
+                    <div class="input-field col s3">
+                      <input id="post_admin_job" type="text" class="validate">
+                      <label for="post_admin_job">Next Job</label>
+                    </div>
+                    <div class="input-field col s3">
+                      <input id="post_admin_residence" type="text" class="validate">
+                      <label for="post_admin_residence">Next Residence</label>
+                    </div>
+                  </div>
+    						</fieldset>
+              </div>
 
               <div class="row">
                 <div class="input-field col s12">
@@ -169,63 +317,199 @@ permalink: /addentry
                 </div>
               </div>
 
-
-
-
               <div class="row">
-              </div>
-              <div class="row">
-              </div>
-              <div class="row">
-              </div>
-              <div class="row">
-              </div>
-              <div class="row">
-              </div>
-              <div class="row">
-              </div>
-              <div class="row">
-              </div>
-              <div class="row">
-              </div>
-              <div class="row">
+                <div class="input-field col s4">
+                  <input id="place_connections" type="text" class="validate">
+                  <label for="place_connections">Place Connections</label>
+                </div>
+                <div class="input-field col s4">
+                  <input id="event_connections" type="text" class="validate">
+                  <label for="event_connections">Event Connections</label>
+                </div>
+                <div class="input-field col s4">
+                  <input id="document_connections" type="text" class="validate">
+                  <label for="document_connections">Document Connections</label>
+                </div>
               </div>
 
-
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit Entry
+                  <i class="material-icons right">send</i>
+              </button>
 
             </form>
           </div>
-
-
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-              <i class="material-icons right">send</i>
-          </button>
-
         </div>
-        <div id="faculty" class="col s12">
-
-        </div>
-        <div id="student" class="col s12">
-
-
-        </div>
-        <div id="administrator" class="col s12">
-
-
-        </div>
-
-
       </div>
+
       <div id="places" class="col s12">
 
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="name" type="text" class="validate">
+            <label for="name">Name</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="year" type="text" class="validate">
+            <label for="year">Year</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="location" type="text" class="validate">
+            <label for="location">Location</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="address" type="text" class="validate">
+            <label for="address">Address</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="lat" type="text" class="validate">
+            <label for="lat">Latitude</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="lon" type="text" class="validate">
+            <label for="lon">Longitude</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="description" class="materialize-textarea"></textarea>
+            <label for="description">Description</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="person_connections" type="text" class="validate">
+            <label for="person_connections">Person Connections</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="event_connections" type="text" class="validate">
+            <label for="event_connections">Event Connections</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="document_connections" type="text" class="validate">
+            <label for="document_connections">Document Connections</label>
+          </div>
+        </div>
+
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit Entry
+            <i class="material-icons right">send</i>
+        </button>
 
       </div>
+
+
       <div id="events" class="col s12">
 
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="name" type="text" class="validate">
+            <label for="name">Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="event_type" type="text" class="validate">
+            <label for="event_type">Event Type</label>
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="day" type="text" class="validate">
+            <label for="day">Day</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="month" type="text" class="validate">
+            <label for="month">Month</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="year" type="text" class="validate">
+            <label for="year">Year</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="description" class="materialize-textarea"></textarea>
+            <label for="description">Description</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="person_connections" type="text" class="validate">
+            <label for="person_connections">Person Connections</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="place_connections" type="text" class="validate">
+            <label for="place_connections">Place Connections</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="document_connections" type="text" class="validate">
+            <label for="document_connections">Document Connections</label>
+          </div>
+        </div>
+
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit Entry
+            <i class="material-icons right">send</i>
+        </button>
 
       </div>
       <div id="documents" class="col s12">
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="name" type="text" class="validate">
+            <label for="name">Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="author" type="text" class="validate">
+            <label for="author">Author</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="day" type="text" class="validate">
+            <label for="day">Day</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="month" type="text" class="validate">
+            <label for="month">Month</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="year" type="text" class="validate">
+            <label for="year">Year</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="description" class="materialize-textarea"></textarea>
+            <label for="description">Description</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="person_connections" type="text" class="validate">
+            <label for="person_connections">Person Connections</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="place_connections" type="text" class="validate">
+            <label for="place_connections">Place Connections</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="event_connections" type="text" class="validate">
+            <label for="event_connections">Event Connections</label>
+          </div>
+        </div>
+
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit Entry
+            <i class="material-icons right">send</i>
+        </button>
 
 
 
